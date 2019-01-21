@@ -23,13 +23,18 @@ public class MainTest {
 
         int livingNeighboursCount = 0;
 
-        assertEquals(1, logic.incrementOrNot(1,1,0,0,
+        assertEquals(0, logic.incrementOrNot(1,1,0,0,
                 livingNeighboursCount));
         assertEquals(0, logic.incrementOrNot(1,1,1,1,
                 livingNeighboursCount));
         assertEquals(0, logic.incrementOrNot(1,1,1,2,
                 livingNeighboursCount));
-        assertEquals(1, logic.incrementOrNot(1,1,2,2,
+        assertEquals(0, logic.incrementOrNot(1,1,2,2,
+                livingNeighboursCount));
+
+        assertEquals(1, logic.incrementOrNot(1,1,0,1,
+                livingNeighboursCount));
+        assertEquals(1, logic.incrementOrNot(1,1,2,1,
                 livingNeighboursCount));
     }
 
