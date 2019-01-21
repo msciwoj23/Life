@@ -9,9 +9,7 @@ import static org.junit.Assert.*;
 public class MainTest {
 
     private Logic logic = new Logic();
-
-    private boolean[][] testBoard;
-
+    
     @Before
     public void initObjects() {
         logic.getFirstGneration();
@@ -19,7 +17,6 @@ public class MainTest {
 
     @Test
     public void incrementOrNot() {
-        logic.getFirstGneration();
 
         int livingNeighboursCount = 0;
 
@@ -40,13 +37,11 @@ public class MainTest {
 
     @Test
     public void getLivingNeighbours() {
-        logic.getFirstGneration();
 
         assertEquals(2, logic.getLivingNeighbours(1, 1));
         assertEquals(3, logic.getLivingNeighbours(1, 2));
         assertEquals(1, logic.getLivingNeighbours(3, 2));
         assertEquals(0, logic.getLivingNeighbours(4, 0));
-
     }
 
     @Test
@@ -67,8 +62,6 @@ public class MainTest {
 
     @Test
     public void getNextGeneration() {
-        logic.getFirstGneration();
-
 
         boolean[][] board = logic.getNextGeneration();
 
@@ -79,6 +72,5 @@ public class MainTest {
         assertTrue(board[1][0]);
         assertTrue(board[1][1]);
         assertTrue(board[1][2]);
-
     }
 }
