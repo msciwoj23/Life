@@ -7,7 +7,7 @@ and cells have their own "life" in two-dimensional board. Uses JavaFx library fo
 ## About the project
 The project was created during my training in Codecool.
 #### The goal was to:
-* Practise Java and OOP
+* Practise Java
 * Use Model - View - Controller pattern
 * Use JavaFx for graphics
 * Have fun
